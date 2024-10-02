@@ -6,11 +6,15 @@
   </head>
   <body>
     {{"this shows as it is beacuse its out of the div object where vue is defined"}}
-    <div id="app">
+    <!-- To the browser v-cloack is an attribute but for 
+    vue it is a directive . 
+    Dierctives change how an element behaves, goes from changing the color 
+    to removing an element-->
+    <div id="app" v-cloak>
       <!-- We can write an expression inside these double curly braces -->
       <!-- An expression is a single unit of code that can be evaluated and produces a value(A single value) -->
       <!-- May be a number , string or a logical value -->
-      {{ firstName}}
+      {{ 'SHIMY SHIMY YA '+firstName}}
       {{ lastName }}
       <br>
       {{`${firstName} ${firstName.toUpperCase()}\n`}}

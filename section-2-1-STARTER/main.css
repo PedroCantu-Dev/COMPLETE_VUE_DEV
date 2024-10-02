@@ -6,3 +6,11 @@ input[type="text"] {
   margin: 10px 0;
   display: block;
 }
+
+/* As the browser see the directive 
+as an atrtribute we can then make changes to it
+corresponding element */
+/*after loading vue deletes that manually created attribute*/
+[v-cloak] {
+  display: none;
+}
