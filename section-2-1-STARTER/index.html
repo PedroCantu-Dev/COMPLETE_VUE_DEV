@@ -12,17 +12,30 @@
       <!-- May be a number , string or a logical value -->
       {{ firstName}}
       {{ lastName }}
+      <br>
+      {{`${firstName} ${firstName.toUpperCase()}\n`}}
+      <br>
+      {{`Hello ${firstName} ${lastName}`+'\n'}}
+      <br>
+      {{`Hello ${firstName} ${lastName.toUpperCase()}`+'\n'}}
+      <br>
+      {{`Hello ${firstName} ${lastName.toUpperCase()}`.split('')+'\n'}}
+      <br>
+      {{`Hello ${firstName} ${lastName.toUpperCase()}`.split('')+ '\n'}}
+      <br>
+      {{fullName()}}
+
       <!-- this variable is not defined in the instance of vue so it will araise a warning -->
-      {{ lastNameOut }}
+      <!-- {{ lastNameOut }} -->
       {{2 + 2}}
       {{ foo = 5}}
 
     </div>
 
-    <div id="app2">
+    <!-- <div id="app2">
       {{ firstName}}
       {{ lastName }}
-    </div>
+    </div> -->
 
     <!-- adding the script of vue -->
     <script src="https://unpkg.com/vue@3"></script>
