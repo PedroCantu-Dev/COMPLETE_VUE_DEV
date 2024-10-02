@@ -11,6 +11,18 @@
     Dierctives change how an element behaves, goes from changing the color 
     to removing an element-->
     <div id="app" v-cloak>
+
+      <!-- Two way databinding -->
+      <p>{{fullName()}}</p>
+      <hr>
+      <label for="">First Name</label>
+      <input type="text" v-model="firstName">
+      <!-- v-model is assigned to a member expression -->
+
+      <label for="">Last Name</label>
+      <input type="text"  v-model="lastName">
+
+      
       <!-- We can write an expression inside these double curly braces -->
       <!-- An expression is a single unit of code that can be evaluated and produces a value(A single value) -->
       <!-- May be a number , string or a logical value -->

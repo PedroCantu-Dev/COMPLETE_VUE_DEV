@@ -15,7 +15,7 @@ const vm = Vue.createApp({ //vm stands for view model
     //whe define the methods that we want to use in the template
     methods: {
         fullName(){
-            return `${this.firstName} ${this.firstName.toUpperCase()}`
+            return `${this.firstName} ${this.lastName.toUpperCase()}`
         }
     }
 }).mount('#app');
