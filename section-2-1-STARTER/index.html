@@ -5,8 +5,17 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
+    {{"this shows as it is beacuse its out of the div object where vue is defined"}}
     <div id="app">
-      hey
+      <!-- We can write an expression inside these double curly braces -->
+      <!-- An expression is a single unit of code that can be evaluated and produces a value(A single value) -->
+      <!-- May be a number , string or a logical value -->
+      {{ firstName}}
+      {{ lastName }}
+      <!-- this variable is not defined in the instance of vue so it will araise a warning -->
+      {{ lastNameOut }}
+      {{2 + 2}}
+      {{ foo = 5}}
 
     </div>
     <!-- adding the script of vue -->
